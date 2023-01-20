@@ -7,7 +7,7 @@ export default class SettingsScreen extends Component {
     return (
       <View style={styles.container}>
         <Button title='Go To Detail Screen' 
-        onPress={() => (navigation.navigate('Constant'))} />
+        onPress={() => (navigation.navigate('ConDetail'))} />
       </View>
     )
   }
