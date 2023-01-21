@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import { Button, View, StyleSheet } from 'react-native'
+import {  View, StyleSheet } from 'react-native'
+import ContactList from './component/ContactList';
 
 export default class ContactsScreen extends Component {
   render() {
     const { navigation } = this.props;
     return (
-      <View style={styles.container}>
-        <Button title='Go To Detail Screen' 
-        onPress={() => (navigation.navigate('ConDetail'))} />
-      </View>
+      
+        <ContactList navigation={this.props.navigation}/>
+      
     )
   }
 }

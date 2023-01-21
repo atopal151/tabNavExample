@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
-import { Button, View, StyleSheet } from 'react-native'
+import { Button, View, StyleSheet,Text } from 'react-native'
 
 export default class SettingsScreen extends Component {
   render() {
-    const { navigation } = this.props;
     return (
       <View style={styles.container}>
-        <Button title='Go To Detail Screen' 
-        onPress={() => (navigation.navigate('ConDetail'))} />
+       <Text>Settings Screen</Text>
       </View>
     )
   }
